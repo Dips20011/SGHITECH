@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 import PortFolio from "./Portfolio"
 
-
+import hero1 from "../assets/img/hero-carousel/Confidential-Technology-Company-02.webp";
+import hero2 from "../assets/img/hero-carousel/Interior_0793-Revised_8x10_JPEG.jpg";
+import hero3 from "../assets/img/hero-carousel/Astroscale-Denver-Headquarters-office-Neoera-1f.jpg";
 
 
 
@@ -15,74 +17,56 @@ const Home = () => {
       <main className="main">
 
 
-        <section id="hero" className="hero section dark-background">
+       <section id="hero" className="hero section dark-background">
 
-          <div id="hero-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  <div id="hero-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-            <div className="carousel-item active">
-              <img src="src/assets/img/hero-carousel/Confidential-Technology-Company-02.webp" alt="" />
-              <div className="container">
-                <h2>
-                  We are IT Specialist..</h2>
-                <p>We are IT specialists delivering innovative and reliable technology solutions.
-                  Our mission is to empower businesses with smart digital transformation.</p>
-                <a href="/about" className="btn-get-started">Read More</a>
-              </div>
-            </div>
+    <div className="carousel-item active">
+      <img src={hero1} alt="" />
+      <div className="container">
+        <h2>We are IT Specialist..</h2>
+        <p>We are IT specialists delivering innovative and reliable technology solutions.
+          Our mission is to empower businesses with smart digital transformation.</p>
+        <a href="/about" className="btn-get-started">Read More</a>
+      </div>
+    </div>
 
-            <div className="carousel-item">
-              <img src="src/assets/img/hero-carousel/Interior_0793-Revised_8x10_JPEG.jpg" alt="" />
-              <div className="container">
-                <h2>
-                  We are IT Specialist..</h2>
-                <p>We are IT specialists delivering innovative and reliable technology solutions.
-                  Our mission is to empower businesses with smart digital transformation.</p>
-                <a href="/about" className="btn-get-started">Read More</a>
-              </div>
-            </div>
+    <div className="carousel-item">
+      <img src={hero2} alt="" />
+      <div className="container">
+        <h2>We are IT Specialist..</h2>
+        <p>We are IT specialists delivering innovative and reliable technology solutions.
+          Our mission is to empower businesses with smart digital transformation.</p>
+        <a href="/about" className="btn-get-started">Read More</a>
+      </div>
+    </div>
 
-            <div className="carousel-item">
-              <img src="src/assets/img/hero-carousel/Astroscale-Denver-Headquarters-office-Neoera-1f.jpg" alt="" />
-              <div className="container">
-                <h2>We are IT Specialist..</h2>
-                <p>We are IT specialists delivering innovative and reliable technology solutions.
-                  Our mission is to empower businesses with smart digital transformation.</p>
-                <a href="/about" className="btn-get-started">Read More</a>
-              </div>
-            </div>
+    <div className="carousel-item">
+      <img src={hero3} alt="" />
+      <div className="container">
+        <h2>We are IT Specialist..</h2>
+        <p>We are IT specialists delivering innovative and reliable technology solutions.
+          Our mission is to empower businesses with smart digital transformation.</p>
+        <a href="/about" className="btn-get-started">Read More</a>
+      </div>
+    </div>
 
-            <a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-            </a>
+    <a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
 
-            <a className="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-              <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-            </a>
+    <a className="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
 
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#hero-carousel"
-                data-bs-slide-to="0"
-                className="active"
-              ></button>
+    <div className="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" className="active"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"></button>
+    </div>
 
-              <button
-                type="button"
-                data-bs-target="#hero-carousel"
-                data-bs-slide-to="1"
-              ></button>
-
-              <button
-                type="button"
-                data-bs-target="#hero-carousel"
-                data-bs-slide-to="2"
-              ></button>
-            </div>
-
-          </div>
-
-        </section>
+  </div>
+</section>
 
 
 
