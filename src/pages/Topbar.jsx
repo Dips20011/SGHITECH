@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import logo from "../assets/img/masonry-portfolio/sglogo.png";
 
 const Topbar = () => {
   return (
@@ -47,7 +48,10 @@ const Topbar = () => {
 
       <a href="/" className="logo d-flex align-items-center me-auto">
        
-        <h1 className="sitename"><img src="src/assets/img/masonry-portfolio/sglogo.png"></img></h1><span>.</span>
+        <h1 className="sitename">
+  <img src={logo} alt="logo" />
+</h1>
+<span>.</span>
       </a>
 
      <nav id="navmenu" className="navmenu">
