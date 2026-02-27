@@ -2,6 +2,18 @@ import React from 'react'
 import { useEffect, useRef } from "react";
 import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
+import img1 from "../assets/img/masonry-portfolio/1.jpeg";
+import img2 from "../assets/img/masonry-portfolio/2.jpeg";
+import img3 from "../assets/img/masonry-portfolio/3.jpeg";
+import img5 from "../assets/img/masonry-portfolio/5.jpeg";
+import img6 from "../assets/img/masonry-portfolio/6.jpeg";
+import img7 from "../assets/img/masonry-portfolio/7.jpeg";
+import img8 from "../assets/img/masonry-portfolio/8.jpeg";
+import img9 from "../assets/img/masonry-portfolio/9.jpeg";
+import img10 from "../assets/img/masonry-portfolio/10.jpeg";
+import img11 from "../assets/img/masonry-portfolio/11.jpeg";
+import img12 from "../assets/img/masonry-portfolio/12.jpeg";
+import img13 from "../assets/img/masonry-portfolio/13.jpeg";
 
 
 function PortFolio() {
@@ -61,61 +73,54 @@ function PortFolio() {
                     <div className="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
                         <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-app">
-                            <img src="src/assets/img/masonry-portfolio/1.jpeg" className="img-fluid img" alt="" />
+                           <img src={img1} className="img-fluid img" alt="" />
 
                         </div>
 
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-product">
-                            <img src="src/assets/img/masonry-portfolio/5.jpeg" className="img-fluid" alt="" />
+                       
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+    <img src={img5} className="img-fluid" alt="" />
+  </div>
 
-                        </div>
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+    <img src={img8} className="img-fluid" alt="" />
+  </div>
 
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-branding">
-                            <img src="src/assets/img/masonry-portfolio/8.jpeg" className="img-fluid" alt="" />
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-em">
+    <img src={img11} className="img-fluid" alt="" />
+  </div>
 
-                        </div>
-                         <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-em">
-                            <img src="src/assets/img/masonry-portfolio/11.jpeg" className="img-fluid" alt="" />
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <img src={img2} className="img-fluid" alt="" />
+  </div>
 
-                        </div>
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+    <img src={img6} className="img-fluid" alt="" />
+  </div>
 
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-app">
-                            <img src="src/assets/img/masonry-portfolio/2.jpeg" className="img-fluid" alt="" />
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+    <img src={img9} className="img-fluid" alt="" />
+  </div>
 
-                        </div>
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-em">
+    <img src={img13} className="img-fluid" alt="" />
+  </div>
 
-                        <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="src/assets/img/masonry-portfolio/6.jpeg" className="img-fluid" alt="" />
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+    <img src={img3} className="img-fluid" alt="" />
+  </div>
 
-                        </div>
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+    <img src={img7} className="img-fluid" alt="" />
+  </div>
 
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-branding">
-                            <img src="src/assets/img/masonry-portfolio/9.jpeg" className="img-fluid" alt="" />
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+    <img src={img10} className="img-fluid" alt="" />
+  </div>
 
-                        </div>
-                         <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-em">
-                            <img src="src/assets/img/masonry-portfolio/13.jpeg" className="img-fluid" alt="" />
-
-                        </div>
-
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-app">
-                            <img src="src/assets/img/masonry-portfolio/3.jpeg" className="img-fluid" alt="" />
-
-                        </div>
-
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-product">
-                            <img src="src/assets/img/masonry-portfolio/7.jpeg" className="img-fluid" alt="" />
-
-                        </div>
-
-                        <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-branding">
-                            <img src="src/assets/img/masonry-portfolio/10.jpeg" className="img-fluid" alt="" />
-
-                        </div>
-                         <div className="col-lg-4 col-md-6  portfolio-item isotope-item filter-em">
-                            <img src="src/assets/img/masonry-portfolio/12.jpeg" className="img-fluid" alt="" />
-
-                        </div>
+  <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-em">
+    <img src={img12} className="img-fluid" alt="" />
+  </div>
 
                     </div>
 
@@ -127,4 +132,4 @@ function PortFolio() {
     )
 }
 
-
+export default PortFolio
