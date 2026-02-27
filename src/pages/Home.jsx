@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Portfolio from "./Portfolio"
+import Portfolio from "./Portfolio.jsx"
 
 const Home = () => {
   return (
