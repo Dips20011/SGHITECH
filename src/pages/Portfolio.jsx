@@ -4,7 +4,7 @@ import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
 
 
-function Portfolio() {
+function PortFolio() {
     const isotope = useRef(null);
 
     useEffect(() => {
@@ -127,4 +127,4 @@ function Portfolio() {
     )
 }
 
-export default Portfolio
+

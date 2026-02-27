@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Career from "./pages/Career";
 import Contacts from "./pages/Contacts";
 import Products from "./pages/Products";
+import Portfolio from "./pages/Portfolio";
 
 
 
@@ -54,6 +55,7 @@ function Wrapper() {
    
         <Route path="/career" element={<Career />} />
         <Route path="/contacts" element={<Contacts />} />
+       
         
         
       </Routes>

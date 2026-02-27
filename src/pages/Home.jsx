@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom"
-import Portfolio from "./Portfolio"
+import PortFolio from "./Portfolio"
+
+
+
 
 
 const Home = () => {
+  
+  
   return (
     <div className="index-page" >
 
@@ -198,7 +203,7 @@ const Home = () => {
 
         </section>
 
-      <Portfolio/>
+     <PortFolio/>
   
 
 
