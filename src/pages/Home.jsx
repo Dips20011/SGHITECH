@@ -5,7 +5,14 @@ import hero1 from "../assets/img/hero-carousel/Confidential-Technology-Company-0
 import hero2 from "../assets/img/hero-carousel/Interior_0793-Revised_8x10_JPEG.jpg";
 import hero3 from "../assets/img/hero-carousel/Astroscale-Denver-Headquarters-office-Neoera-1f.jpg";
 
-
+import c1 from "../assets/img/clients/1.png";
+import c2 from "../assets/img/clients/2.png";
+import c3 from "../assets/img/clients/3.png";
+import c4 from "../assets/img/clients/4.png";
+import c5 from "../assets/img/clients/5.png";
+import c6 from "../assets/img/clients/6.png";
+import c7 from "../assets/img/clients/7.png";
+import c8 from "../assets/img/clients/8.png";
 
 const Home = () => {
   
@@ -194,53 +201,49 @@ const Home = () => {
 
         <section id="clients" className="clients section">
 
+  <div className="container section-title m-3" data-aos="fade-up">
+    <h2 className="m-3">Clients</h2>
+  </div>
 
-          <div className="container section-title m-3  " data-aos="fade-up" >
-            <h2 className="m-3">Clients</h2>
-           
-          </div>
+  <div className="container" data-aos="fade-up" data-aos-delay="100">
+    <div className="row g-0 clients-wrap">
 
-          <div className="container " data-aos="fade-up" data-aos-delay="100">
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c1} className="img-fluid" alt="" />
+      </div>
 
-            <div className="row g-0 clients-wrap">
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c2} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/1.png" className="img-fluid" alt="" />
-              </div>
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c3} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/2.png" className="img-fluid" alt="" />
-              </div>
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c4} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/3.png" className="img-fluid" alt="" />
-              </div>
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c5} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/4.png" className="img-fluid" alt="" />
-              </div>
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c6} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/5.png" className="img-fluid" alt="" />
-              </div>
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c7} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/6.png" className="img-fluid" alt="" />
-              </div>
+      <div className="col-xl-3 col-md-4 client-logo">
+        <img src={c8} className="img-fluid" alt="" />
+      </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/7.png" className="img-fluid" alt="" />
-              </div>
+    </div>
+  </div>
 
-              <div className="col-xl-3 col-md-4 client-logo">
-                <img src="src/assets/img/clients/8.png" className="img-fluid" alt="" />
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
+</section>
 
       </main>
 
