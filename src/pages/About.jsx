@@ -1,5 +1,5 @@
-
-
+import aboutImg from "../assets/img/masonry-portfolio/WhatsApp Image 2026-02-27 at 2.36.59 PM.jpeg";
+href="public/img/masonry-portfolio/WhatsApp Video 2026-02-27 at 10.29.34 AM.mp4"
 const About = () => {
 
   return (
@@ -21,7 +21,9 @@ const About = () => {
 
         <div className="row position-relative">
 
-          <div className="col-lg-7 about-img" ><img src="src/assets/img/masonry-portfolio/WhatsApp Image 2026-02-27 at 2.36.59 PM.jpeg"/></div>
+          <div className="col-lg-7 about-img" ><div className="col-lg-7 about-img">
+  <img src={aboutImg} alt="about" />
+</div></div>
 
           <div className="col-lg-7"  >
             <h2 className="inner-title">Who we are?</h2>
@@ -37,7 +39,7 @@ const About = () => {
               <p>We create modern digital platforms aligned with global IT standards while meeting the specific needs of our clients. Our customer base spans across Latur and Pune, and we continue expanding our footprint through reliable technology solutions and exceptional service delivery.</p>
                <div className="watch-video d-flex align-items-center position-relative">
                 <i className="bi bi-play-circle"></i>
-               <a href="public/img/masonry-portfolio/WhatsApp Video 2026-02-27 at 10.29.34 AM.mp4" className="glightbox stretched-link">
+               <a href="/img/masonry-portfolio/WhatsApp Video 2026-02-27 at 10.29.34 AM.mp4" className="glightbox stretched-link">
   Watch Video
 </a>
               </div>
