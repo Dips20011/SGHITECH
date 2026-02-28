@@ -63,10 +63,10 @@ function PortFolio() {
 
                     <ul className="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
                         <li data-filter="*" className="filter-active">All</li>
-                        <li data-filter=".filter-app">Achivments</li>
-                        <li data-filter=".filter-product">functions</li>
+                        <li data-filter=".filter-app">Achievements</li>
+                        <li data-filter=".filter-product">Functions</li>
                         <li data-filter=".filter-branding">Clients</li>
-                        <li data-filter=".filter-em">employees</li>
+                        <li data-filter=".filter-em">Employees</li>
 
                     </ul>
 

@@ -1,11 +1,28 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/img/masonry-portfolio/sglogo.png";
+import { useEffect, useState } from "react";
+
 
 const Topbar = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+
+
+  const toggleMenu = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const closeMenu = () => {
+    setMobileOpen(false);
+  };
+
+ 
+
+
   return (
     <>
     <div className="topbar bg-dark text-white py-2">
-      <div className="container d-flex justify-content-between align-items-center">
+      <div className="container d-flex align-items-center justify-content-between">
 
         {/* LEFT */}
         <div className="d-flex gap-4 align-items-center">
@@ -43,53 +60,65 @@ const Topbar = () => {
 
     </div>
     <div>
-       <header id="header" className="header d-flex align-items-center sticky-top">
-    <div className="container position-relative d-flex align-items-center">
-
-      <a href="/" className="logo d-flex align-items-center me-auto">
-       
-        <h1 className="sitename">
-  <img src={logo} alt="logo" />
-</h1>
-<span>.</span>
-      </a>
-
-     <nav id="navmenu" className="navmenu">
-  <ul>
-
-    <li>
-      <Link to="/" className="active">Home</Link>
-    </li>
-
-    <li className="dropdown">
-      <Link to="/about">Aboutus</Link>
-    </li>
-
-    <li>
-      <Link to="/products">Products</Link>
-    </li>
-     <li>
-      <Link to="/services">Services</Link>
-    </li>
-
-    <li>
-      <Link to="/career">Career</Link>
-    </li>
-
-
-    <li>
-      <Link to="/contacts">Contact</Link>
-    </li>
-
-  </ul>
-
-  <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+      <>
+          <>
      
 
-    </div>
-  </header>
+       <header className="header sticky-top">
+        <div className="container d-flex align-items-center justify-content-between">
+
+          {/* ✅ Logo LEFT */}
+          <Link to="/" className="logo">
+            <img src={logo} alt="logo" className="logo-img" />
+          </Link>
+
+          {/* Desktop Menu */}
+          <nav className="navmenu">
+            <ul className="desktop-menu">
+              <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+              <li><Link to="/about" onClick={closeMenu}>Aboutus</Link></li>
+              <li><Link to="/products" onClick={closeMenu}>Products</Link></li>
+              <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+              <li><Link to="/career" onClick={closeMenu}>Career</Link></li>
+              <li><Link to="/contacts" onClick={closeMenu}>Contact</Link></li>
+            </ul>
+          </nav>
+
+          {/* ✅ Hamburger RIGHT */}
+          <div
+            className="mobile-nav-toggle"
+            onClick={toggleMenu}
+          >
+            <i className={`bi ${mobileOpen ? "bi-x" : "bi-list"}`}></i>
+          </div>
+
+        </div>
+      </header>
+
+      {/* ✅ MOBILE OVERLAY MENU */}
+      {mobileOpen && (
+        <div className="mobile-overlay">
+
+          <div className="mobile-close" onClick={toggleMenu}>
+            <i className="bi bi-x"></i>
+          </div>
+
+          <ul className="mobile-menu">
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/about" onClick={closeMenu}>Aboutus</Link></li>
+            <li><Link to="/products" onClick={closeMenu}>Products</Link></li>
+            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+            <li><Link to="/career" onClick={closeMenu}>Career</Link></li>
+            <li><Link to="/contacts" onClick={closeMenu}>Contact</Link></li>
+          </ul>
+
+        </div>
+      )}
+    </></>
+   
+
+
+    
     </div>
     </>
 

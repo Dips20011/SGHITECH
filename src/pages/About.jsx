@@ -117,8 +117,8 @@ const About = () => {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Sarah Jhonson</h4>
-                    <span>Product Manager</span>
+                    <h4>Sarah Jhonso</h4>
+                    <span>React Native Developer</span>
                   </div>
                 </div>
               </div>
@@ -136,7 +136,7 @@ const About = () => {
                   </div>
                   <div className="member-info">
                     <h4>William Anderson</h4>
-                    <span>CTO</span>
+                    <span>Dot net Developer</span>
                   </div>
                 </div>
               </div>
