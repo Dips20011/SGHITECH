@@ -1,5 +1,6 @@
 import aboutImg from "../assets/img/masonry-portfolio/WhatsApp Image 2026-02-27 at 2.36.59 PM.jpeg";
-
+import emImg from "../assets/img/clients/WhatsApp Image 2026-02-28 at 5.51.15 PM.jpeg"
+import empImg from "../assets/img/clients/WhatsApp Image 2026-02-28 at 5.23.06 PM.jpeg"
 const About = () => {
 
   return (
@@ -85,7 +86,7 @@ const About = () => {
 
           <div className="container">
 
-            <div className="row gy-4">
+            <div className="row gy-4  ">
 
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch" >
                 <div className="team-member">
@@ -108,7 +109,7 @@ const About = () => {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch" >
                 <div className="team-member">
                   <div className="member-img">
-                    <img src="assets/img/team/team-2.jpg" className="img-fluid" alt="" />
+                     <img src={emImg} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter-x"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -117,13 +118,13 @@ const About = () => {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Sarah Jhonso</h4>
-                    <span>React Native Developer</span>
+                    <h4>Rajwardhan  patil</h4>
+                    <span>Full stack Engineer</span>
                   </div>
                 </div>
               </div>
 
-              <div className="col-lg-3 col-md-6 d-flex align-items-stretch" >
+              {/* <div className="col-lg-3 col-md-6 d-flex align-items-stretch" >
                 <div className="team-member">
                   <div className="member-img">
                     <img src="assets/img/team/team-3.jpg" className="img-fluid" alt="" />
@@ -139,12 +140,12 @@ const About = () => {
                     <span>Dot net Developer</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch" >
                 <div className="team-member">
                   <div className="member-img">
-                    <img src="assets/img/team/team-4.jpg" className="img-fluid" alt="" />
+                   <img src={empImg} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter-x"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -153,8 +154,8 @@ const About = () => {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
+                    <h4> Dipali  Gonjari</h4>
+                    <span>Hr executive</span>
                   </div>
                 </div>
               </div>
