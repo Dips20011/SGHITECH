@@ -12,7 +12,7 @@ const Contact = () => {
               <div className="footer-contact pt-3">
                 <p>SGHI-TECH Swedaganga Society, Pasaydan Building, Warje Pune, 411058</p>
 
-                <p className="mt-3"><strong>Phone:</strong> <span> 9096408111</span></p>
+                <p className="mt-3"><strong>Phone:</strong> <span>9096408111</span></p>
                 <p><strong>Email:</strong> <span>info@sghitech.in</span></p>
               </div>
               <div className="social-links d-flex mt-4">
